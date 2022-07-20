@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Modal</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="cnt">
+      <button class="cnt__btn" id="theBtn" onclick="showModal()">
+        Click on me!
+      </button>
+      <div class="cnt__modal" id="modal">
+        <img
+          id="close"
+          src="https://www.svgrepo.com/show/41687/multiply.svg"
+          alt="esc"
+          onclick="closeModal()"
+        />
+        <form class="cnt__modal--form">
+          <label for="name"> Name: </label>
+          <input class="input" id="name" placeholder="Code" />
+          <label for="lastName"> Lastname: </label>
+          <input class="input" id="lastName" placeholder="Pen" />
+          <button class="btn" onclick="alert('Saved!')">Save!</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
