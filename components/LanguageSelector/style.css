@@ -91,6 +91,7 @@ body {
 }
 .flag {
   width: 0;
+  cursor: pointer;
 }
 #flag1 {
   transition: width 0.2s;
